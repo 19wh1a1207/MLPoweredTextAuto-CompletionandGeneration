@@ -1,4 +1,4 @@
-# MLPoweredTextAuto-CompletionandGeneration
+# ML Powered Text Auto-Completion and Generation
 
 ## Step by step procedure
 1. Install VS Code
@@ -18,4 +18,4 @@
 15. We have even build UI using Flask where the user can interact
 
 ## Output
-![op](/Output/imp10.jpg)
+![op](page.png)
