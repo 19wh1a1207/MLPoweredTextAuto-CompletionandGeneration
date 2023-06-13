@@ -97,16 +97,7 @@ def superPos(input_Str):
 def result():
 	result_term = request.form['input_text'].strip(" ")
 	print ('Result: ', result_term)
-	
-	if result_term in temp_gen.keys():
-		output_result = temp_gen[result_term]
-	elif ("Request for " + result_term.strip(" ")) in temp_gen.keys():
-		output_result = temp_gen["Request for " + result_term.strip(" ")]
-	elif superPos(result_term) != -1:
-		output_result = temp_gen[superPos(result_term)]
-	else:
-		output_result = result_term + ":\n\n" + "Hi, Hope you are doing well. [Your Context]\n\n\nSincerly,\n[Your Name]"
-	# output_result = GRU.GRU(result_term)
+	output_result = GRU.GRU(result_term)
 	print(output_result)
 
 	result_resp = jsonify(output_result)
