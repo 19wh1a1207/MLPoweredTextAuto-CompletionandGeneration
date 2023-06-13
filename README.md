@@ -18,4 +18,4 @@
 15. We have even build UI using Flask where the user can interact
 
 ## Output
-![op](page.png)
+![page.png](page.png)
